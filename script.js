@@ -38,7 +38,7 @@ function getHumanChoiceScissors(){
 
 function playRound(humanChoice, computerChoice){
     if (humanChoice == computerChoice){
-        document.getElementById("result").innerText = "It's a draw!, you both choose " + humanChoice;
+        document.getElementById("result").innerText = "It's a draw! you both choose " + humanChoice;
     } else if ((humanChoice == "rock" && computerChoice == "scissors") || (humanChoice == "paper" && computerChoice == "rock") || (humanChoice == "scissors" && computerChoice == "paper")){
         humanScore++;
         document.getElementById("result").innerText = "You win! " + humanChoice + " beats " + computerChoice;
@@ -46,7 +46,7 @@ function playRound(humanChoice, computerChoice){
         computerScore++;
         document.getElementById("result").innerText = "You lost! " + computerChoice + " beats " + humanChoice;
     }
-    document.getElementById("score").innerText = "score:\n Human: " + humanScore + " - " + computerScore + " Computer";
+    document.getElementById("score").innerText = "Score:\n Human: " + humanScore + " - " + computerScore + " Computer";
     document.getElementById("finalResult").innerText = ""
 }
 
